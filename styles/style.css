@@ -9,23 +9,257 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+/*
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* parameters for the header section */
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #f2f2f2;
+  overflow: hidden;
 }
 
-/* here we have two examples of selectors in order to remind you how to set styles for elements */
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  z-index: 2;
+}
+
+.header__link {
+  color: #2F80ED;
+  text-decoration: none;
+  transition: opacity .3s ease;
+}
+
+.header__link:hover {
+  opacity: 0.6;
+}
+
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
 .header__square-pic {
+  position: absolute;
+  background-color: #2f80ed;
   height: 568px;
   width: 568px;
+  top: 64px;
+  right: 0;
 }
 
-/* including elements with key-value modifiers */
+.header__subtitle {
+  margin: 0;
+  padding: 0;
+  width: 388px;
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  z-index: 2;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.header__title {
+  margin: 0;
+  padding: 0;
+  width: 730px;
+  margin-left: 64px;
+  z-index: 2;
+  color: #000000;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.two-columns {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-columns__brief {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  width: 175px;
+  color: #044cad;
+}
+
+.two-columns__main-text {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__paragraph {
+  margin: 0 0 20px 0;
+  padding: 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.two-columns__paragraph:last-child {
+  margin: 0;
+}
+
+.two-columns__span-accent {
+  margin: 0;
+  padding: 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.digits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.section-title {
+  margin: 0;
+  padding: 0;
+  width: 60%;
+  text-align: center;
+  line-height: 69px;
+  font-size: 60px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.section-title_theme_dark {
+  color: white;
+}
+
+.section-subtitle {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  width: 60%;
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  z-index: 2;
+}
+
+
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+  list-style: none;
+}
+
+.table__heading {
+  margin: 0;
+  padding: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.table__text {
+  margin: 20px 0;
+  padding: 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.table__text:last-child {
+  margin-bottom: 0;
+}
+
+.table {
+  width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+
+.feynman {
+  height: 790px;
+  position: relative;
+  background-image: url(../../images/feinman.png);
+  background-repeat: no-repeat;
+  background-position: bottom 0 left 0;
+  background-size: 867px 637px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  color: black;
+  text-decoration: none;
+  transition: opacity .3s ease;
+}
+
+.feynman__link:hover {
+  opacity: 0.6;
+}
+
+.feynman__subtitle {
+  margin: 0;
+  padding: 0;
+  margin-top: 70px;
+  text-align: center;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.feynman {
+  height: 790px;
+  position: relative;
+  background-image: url(../../images/feinman.png);
+  background-repeat: no-repeat;
+  background-position: bottom 0 left 0;
+  background-size: 867px 637px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
 }
+*/

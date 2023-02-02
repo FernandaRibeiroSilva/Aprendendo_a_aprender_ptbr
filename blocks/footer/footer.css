@@ -7,6 +7,7 @@
 @import url(../footer/__columns/footer__columns.css);
 @import url(../footer/__columns/footer__columns.css);
 @import url(../footer/__social-icon/footer__social-icon.css);
+@import url(../footer/__column_content_info/footer__column-content_info.css);
 
 .footer {
   min-height: 350px;
@@ -15,4 +16,14 @@
   display: flex;
   justify-content: center;
   background-color: #1f1f1f;
+}
+
+
+
+.footer__column_content_social {
+  row-gap: 20px;
+}
+
+.footer__column_content_info {
+  row-gap: 20px;
 }

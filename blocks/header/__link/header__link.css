@@ -2,6 +2,7 @@
   color: #2F80ED;
   text-decoration: none;
   transition: opacity .3s ease;
+  display: grid;
 }
 
 .header__link:hover {

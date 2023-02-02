@@ -1,3 +1,4 @@
 .table_theme_dark {
-  color: white;
+  padding-top: 80px;
+  row-gap: 80px;
 }

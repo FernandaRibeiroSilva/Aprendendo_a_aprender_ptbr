@@ -5,6 +5,9 @@
   font-size: 18px;
   font-weight: normal;
   transition: opacity .3s ease;
+  margin: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .footer__column-link:hover {

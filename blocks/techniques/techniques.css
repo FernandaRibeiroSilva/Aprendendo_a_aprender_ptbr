@@ -1,5 +1,5 @@
 .techniques {
-  width: 80%;
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;

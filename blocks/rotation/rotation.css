@@ -1,6 +1,6 @@
 @keyframes rotation {
   from {
-    transform: rotate(-15deg);
+    transform: rotate(0deg);
   }
 
   to {

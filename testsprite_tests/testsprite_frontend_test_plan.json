@@ -1,0 +1,259 @@
+[
+  {
+    "id": "TC001",
+    "title": "Jump from header CTA to Techniques section",
+    "description": "Verifies a first-time visitor can open the homepage, see the header content, and use the CTA to jump to the Techniques section successfully.",
+    "category": "Header and Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the homepage"
+      },
+      {
+        "type": "action",
+        "description": "Wait for the page to finish loading"
+      },
+      {
+        "type": "action",
+        "description": "Click the primary call-to-action link in the header"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the Techniques section is in view"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC002",
+    "title": "Header core content is visible on initial load",
+    "description": "Verifies the homepage header shows the core branding/title/subtitle content on initial load.",
+    "category": "Header and Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the homepage"
+      },
+      {
+        "type": "action",
+        "description": "Wait for the page to finish loading"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the site branding is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a page title and subtitle are displayed in the header"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC003",
+    "title": "Technique cards show key content (image and text) consistently",
+    "description": "Verifies technique cards display their core content consistently, including a visible image area and readable title/description.",
+    "category": "Techniques Section",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the homepage"
+      },
+      {
+        "type": "action",
+        "description": "Wait for the page to finish loading"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Techniques section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify multiple technique cards are displayed with an image area and text content"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC004",
+    "title": "Techniques section is reachable by scrolling without using CTA",
+    "description": "Verifies a visitor can scroll down and reach the Techniques section without relying on the header CTA.",
+    "category": "Techniques Section",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the homepage"
+      },
+      {
+        "type": "action",
+        "description": "Wait for the page to finish loading"
+      },
+      {
+        "type": "action",
+        "description": "Scroll down until the Techniques section is reached"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the Techniques section is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC005",
+    "title": "Keyboard user can reach and activate CTA with visible focus",
+    "description": "Verifies a keyboard-only user can tab to the header CTA with visible focus and activate it to reach the Techniques section.",
+    "category": "Header and Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the homepage"
+      },
+      {
+        "type": "action",
+        "description": "Wait for the page to finish loading"
+      },
+      {
+        "type": "action",
+        "description": "Press Tab until the primary call-to-action link is focused"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the focused element has a visible focus indicator"
+      },
+      {
+        "type": "action",
+        "description": "Press Enter"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the Techniques section is in view"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC006",
+    "title": "All technique cards are reviewable by scrolling through the section",
+    "description": "Verifies a visitor can scroll through the Techniques section to view the full list of technique cards without layout breakage.",
+    "category": "Techniques Section",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the homepage"
+      },
+      {
+        "type": "action",
+        "description": "Wait for the page to finish loading"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Techniques section"
+      },
+      {
+        "type": "action",
+        "description": "Scroll through the Techniques section to the end of the card list"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the last technique card is visible and the layout remains readable"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC007",
+    "title": "Small viewport layout keeps technique cards readable without clipping",
+    "description": "Verifies on a small-screen viewport the Techniques cards remain readable and are not clipped or overlapping.",
+    "category": "Techniques Section",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the homepage"
+      },
+      {
+        "type": "action",
+        "description": "Wait for the page to finish loading"
+      },
+      {
+        "type": "action",
+        "description": "Resize the browser to a small mobile viewport"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Techniques section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify technique card text is readable and cards are not visually overlapping or clipped"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC008",
+    "title": "Landscape mobile viewport keeps header and cards usable",
+    "description": "Verifies on a landscape mobile viewport the header and technique cards remain usable without content overlap or unreadable text.",
+    "category": "Header and Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the homepage"
+      },
+      {
+        "type": "action",
+        "description": "Wait for the page to finish loading"
+      },
+      {
+        "type": "action",
+        "description": "Resize the browser to a small viewport and then switch to a landscape aspect ratio"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the header content remains readable without overlapping"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Techniques section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify technique cards remain readable without overlapping or clipping"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC009",
+    "title": "CTA anchor remains usable after scrolling back to top",
+    "description": "Verifies the visitor can scroll away and still use the header CTA to navigate back to the Techniques section reliably.",
+    "category": "Header and Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the homepage"
+      },
+      {
+        "type": "action",
+        "description": "Wait for the page to finish loading"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Techniques section"
+      },
+      {
+        "type": "action",
+        "description": "Scroll back to the top of the page"
+      },
+      {
+        "type": "action",
+        "description": "Click the primary call-to-action link in the header"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the Techniques section is in view"
+      }
+    ],
+    "priority": "Medium"
+  }
+]

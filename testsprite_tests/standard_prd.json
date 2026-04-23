@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "project": "Aprendendo a Aprender",
+    "date": "2026-04-23",
+    "prepared_by": "TestSprite"
+  },
+  "product_overview": "A static landing page about effective learning techniques, presented with HTML and modular CSS.",
+  "core_goals": [
+    "Showcase learning techniques and resources",
+    "Provide structured content using cards, sections, and external links",
+    "Demonstrate static front-end layout and responsive design"
+  ],
+  "features": [
+    {
+      "name": "Header and Navigation",
+      "description": "Displays top branding, title, subtitle, and CTA navigation link.",
+      "user_flows": [
+        "Open homepage -> View header elements -> Click CTA to jump to techniques section"
+      ]
+    },
+    {
+      "name": "Techniques Section",
+      "description": "Presents learning techniques in card format with images and descriptions.",
+      "user_flows": [
+        "Scroll to techniques section -> Review each card's title and description"
+      ]
+    }
+  ]
+}

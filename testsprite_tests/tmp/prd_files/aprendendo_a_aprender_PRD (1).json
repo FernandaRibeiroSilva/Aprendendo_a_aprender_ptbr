@@ -1,0 +1,459 @@
+{
+  "prd": {
+    "meta": {
+      "document_type": "Product Requirements Document",
+      "version": "1.0",
+      "status": "Draft",
+      "created": "2026-04-23",
+      "project_name": "Aprendendo a Aprender",
+      "project_name_en": "Learning How to Learn",
+      "language": "pt-BR",
+      "platform": "Practicum by Yandex",
+      "author": "Fernanda Ribeiro",
+      "type": "Static Educational Landing Page"
+    },
+
+    "problem_statement": {
+      "summary": "Most formal education systems teach students what to learn, but never how to learn effectively. Rote memorization and repetitive exercises produce short-term retention without true understanding. There is a gap between what schools teach and the meta-cognitive skills learners need to become self-sufficient, lifelong learners.",
+      "impact": "Without knowledge of effective learning techniques, students underperform, lose motivation, and fail to retain information beyond exams. Adults seeking to acquire new skills lack a structured framework for doing so efficiently."
+    },
+
+    "goals": [
+      "Educate visitors on evidence-based learning techniques in an accessible, engaging format.",
+      "Reduce the perceived complexity of self-directed learning by presenting clear frameworks.",
+      "Inspire visitors to adopt lifelong learning habits by surfacing compelling brain and learning statistics.",
+      "Demonstrate front-end development proficiency using semantic HTML5 and BEM-methodology CSS.",
+      "Serve as a sprint deliverable for the Practicum by Yandex web development curriculum."
+    ],
+
+    "non_goals": [
+      "This project does not provide interactive learning exercises or quizzes.",
+      "It does not support mobile or tablet viewports in this sprint.",
+      "It does not include a backend, database, or user authentication.",
+      "It does not support multiple languages beyond Portuguese (pt-BR) in this sprint.",
+      "It does not track user behavior or analytics."
+    ],
+
+    "user_personas": [
+      {
+        "id": "persona_1",
+        "name": "The Struggling Student",
+        "age_range": "16–24",
+        "description": "A university or high school student who studies hard but feels their results don't reflect their effort. They rely on memorization and are frustrated by how quickly they forget material after exams.",
+        "goals": [
+          "Find techniques that make studying more efficient.",
+          "Understand why their current approach isn't working."
+        ],
+        "pain_points": [
+          "Spends long hours studying with poor retention.",
+          "Doesn't know how to study — only what to study."
+        ]
+      },
+      {
+        "id": "persona_2",
+        "name": "The Adult Upskiller",
+        "age_range": "25–40",
+        "description": "A working professional looking to acquire a new skill (programming, language, etc.) in their limited free time. They want to learn smarter, not harder.",
+        "goals": [
+          "Learn a new skill as quickly and durably as possible.",
+          "Find a structured approach to self-directed learning."
+        ],
+        "pain_points": [
+          "Limited time to dedicate to learning.",
+          "Unsure which learning methods are actually effective."
+        ]
+      },
+      {
+        "id": "persona_3",
+        "name": "The Curious Mind",
+        "age_range": "18–50",
+        "description": "A naturally curious person interested in cognitive science, productivity, and self-improvement. They enjoy reading about how the brain works.",
+        "goals": [
+          "Discover new frameworks and thinkers (Feynman, Oakley, Kaufman).",
+          "Explore curated resources for deeper reading."
+        ],
+        "pain_points": [
+          "Scattered information across the internet with no curated starting point."
+        ]
+      }
+    ],
+
+    "user_stories": [
+      {
+        "id": "US-01",
+        "persona": "persona_1",
+        "story": "As a student, I want to understand why memorization alone doesn't lead to real learning, so that I can change my study habits.",
+        "acceptance_criteria": [
+          "The description section presents a clear critique of rote memorization.",
+          "The text is readable and uses plain language accessible to a 16-year-old.",
+          "An accent highlight draws attention to the key question posed."
+        ]
+      },
+      {
+        "id": "US-02",
+        "persona": "persona_1",
+        "story": "As a student, I want to learn Barbara Oakley's 5 techniques, so that I have a practical toolkit for studying.",
+        "acceptance_criteria": [
+          "All 5 technique cards are visible: Duas Maneiras de Pensar, Recall, Intercalar, Questões, Ilusão da Competência.",
+          "Each card has a title, image, and short description.",
+          "Cards are displayed in a scannable grid layout."
+        ]
+      },
+      {
+        "id": "US-03",
+        "persona": "persona_2",
+        "story": "As an adult upskiller, I want to see Josh Kaufman's 10 principles for rapid skill acquisition, so that I have a clear framework to follow.",
+        "acceptance_criteria": [
+          "All 10 principles are listed in numbered order.",
+          "The section is visually distinct (dark theme) to create emphasis.",
+          "Author attribution ('por Josh Kaufman') is clearly displayed."
+        ]
+      },
+      {
+        "id": "US-04",
+        "persona": "persona_2",
+        "story": "As an adult learner, I want to learn about the Feynman Technique, so that I can apply it to subjects I'm studying.",
+        "acceptance_criteria": [
+          "The Feynman section displays a title, subtitle, and a 'Mais →' link to further reading.",
+          "The section is visually striking with a background image of Feynman.",
+          "The link navigates to an external resource (URL TBD)."
+        ]
+      },
+      {
+        "id": "US-05",
+        "persona": "persona_3",
+        "story": "As a curious reader, I want to see fascinating brain and learning statistics, so that I feel motivated and informed.",
+        "acceptance_criteria": [
+          "All 8 statistics are displayed with their labels and sources where applicable.",
+          "Statistics are presented in a visually engaging grid format.",
+          "Sources (Pew Research, World Bank) are attributed correctly."
+        ]
+      },
+      {
+        "id": "US-06",
+        "persona": "persona_3",
+        "story": "As a curious reader, I want to discover further learning resources, so that I can explore these topics more deeply.",
+        "acceptance_criteria": [
+          "Resources section displays logos for TED-Ed, Medium, Dezeen, and Goodreads.",
+          "Each logo is a clickable link that opens in a new tab.",
+          "Links do not navigate away from the current page without warning."
+        ]
+      },
+      {
+        "id": "US-07",
+        "persona": "persona_1",
+        "story": "As a visitor, I want to watch TED talk videos without leaving the page, so that I can consume supplementary content in context.",
+        "acceptance_criteria": [
+          "Two YouTube iframes are embedded and playable directly on the page.",
+          "Iframes support autoplay, gyroscope, and picture-in-picture attributes.",
+          "Videos are presented side by side on desktop."
+        ]
+      }
+    ],
+
+    "functional_requirements": [
+      {
+        "id": "FR-01",
+        "section": "Header",
+        "requirements": [
+          "Display Yandex Practicum logo in top-left.",
+          "Render H1 title: 'Aprendendo a Aprender'.",
+          "Render subtitle with inline CTA link 'Saiba mais →' anchoring to #techniques.",
+          "CTA link color must be #2F80ED.",
+          "Display hero illustration (header-image.png) absolutely positioned at bottom-right.",
+          "Render a decorative blue square (#2F80ED) with continuous CSS rotation animation.",
+          "Header background color: #F2F2F2.",
+          "Header height: 100vh, min 600px, max 756px."
+        ]
+      },
+      {
+        "id": "FR-02",
+        "section": "Description",
+        "requirements": [
+          "Implement two-column layout using .two-columns BEM block.",
+          "Left column: heading 'O maior problema da educação'.",
+          "Right column: 3 editorial paragraphs.",
+          "Second paragraph must include an accented span (.two-columns__span-accent) on 'Aqui vai a pergunta de fato:'."
+        ]
+      },
+      {
+        "id": "FR-03",
+        "section": "Techniques",
+        "requirements": [
+          "Section must have id='techniques' for anchor navigation.",
+          "Section title: 'Aprender Técnicas'.",
+          "Section subtitle: 'As Cinco estratégias de Barbara Oakley'.",
+          "Render exactly 5 cards, each containing: image, H3 title, description paragraph.",
+          "Cards: As Duas Maneiras de Pensar, Recall, Intercalar, Questões, Ilusão da Competência.",
+          "All card images must have descriptive alt text."
+        ]
+      },
+      {
+        "id": "FR-04",
+        "section": "Video",
+        "requirements": [
+          "Section title: 'Conversas TED'.",
+          "Section subtitle: 'Para os amantes da procrastinação'.",
+          "Embed two YouTube iframes side by side.",
+          "iframe src 1: https://www.youtube.com/embed/5MgBikgcWnY",
+          "iframe src 2: https://www.youtube.com/embed/arj7oStGLkU",
+          "Both iframes must include allow attributes: accelerometer, autoplay, encrypted-media, gyroscope, picture-in-picture.",
+          "Both iframes must have allowfullscreen and descriptive title attributes."
+        ]
+      },
+      {
+        "id": "FR-05",
+        "section": "Oakley",
+        "requirements": [
+          "Implement two-column layout (reuse .two-columns block).",
+          "Left column heading: 'A história de Barbara Oakley.'",
+          "Right column: one paragraph summarizing Oakley's background and learning methodology."
+        ]
+      },
+      {
+        "id": "FR-06",
+        "section": "Feynman",
+        "requirements": [
+          "Section title: 'A Técnica de Feynman'.",
+          "Section subtitle: 'Aprender sem esquecer'.",
+          "Display 'Mais →' link to an external resource (URL to be defined).",
+          "Background image: feynman.png."
+        ]
+      },
+      {
+        "id": "FR-07",
+        "section": "Digits",
+        "requirements": [
+          "Section title: 'Fatos e números'.",
+          "Section subtitle: 'Sobre o cérebro e o aprendizado'.",
+          "Display all 8 statistics with value, label, and source (where applicable):",
+          "86 bilhões — neurônios no cérebro humano",
+          "73% — adultos nos EUA que se consideram aprendizes vitalícios (Pew Research)",
+          "1,000 terabytes — capacidade de armazenamento humana",
+          "500 trilhões — sinapses nervosas no adulto médio",
+          "420 trilhões — adultos abaixo de 25 anos sem educação suficiente (Banco Mundial, 2017)",
+          "26 anos — idade de Einstein ao publicar a teoria da relatividade especial",
+          "1885 — desenvolvimento da curva de esquecimento",
+          "1897 — pesquisa de Pavlov sobre condicionamento clássico"
+        ]
+      },
+      {
+        "id": "FR-08",
+        "section": "Kaufman",
+        "requirements": [
+          "Section title: 'Dez princípios para adquirir habilidades de forma rápida'.",
+          "Author credit: 'por Josh Kaufman'.",
+          "Display all 10 principles in numbered order.",
+          "Section uses dark color theme (dark backgrounds on cells).",
+          "Render kaufman-triangle.svg with continuous CSS rotation animation."
+        ]
+      },
+      {
+        "id": "FR-09",
+        "section": "Resources",
+        "requirements": [
+          "Section title: 'Recursos úteis'.",
+          "Section subtitle: 'Material adicional sobre técnicas e hacks de aprendizagem.'",
+          "Display 4 partner logos as linked images: TED-Ed, Medium, Dezeen, Goodreads.",
+          "All links must open in a new tab (target='_blank') with rel='noopener'."
+        ]
+      },
+      {
+        "id": "FR-10",
+        "section": "Footer",
+        "requirements": [
+          "Three-column layout.",
+          "Column 1: Yandex Practicum logo + copyright text '© 2023. Fernanda Ribeiro'.",
+          "Column 2: Heading 'Sobre Practicum by Yandex' + links: Página Inicial, Missão, Profissões.",
+          "Column 3: Heading 'Mídia social' + Facebook and Instagram links with SVG icons.",
+          "All external links open in new tab with rel='noopener'."
+        ]
+      }
+    ],
+
+    "non_functional_requirements": [
+      {
+        "id": "NFR-01",
+        "category": "Layout",
+        "requirement": "Page minimum width: 1,100px. Maximum width: 1,600px. Content centered on wider screens."
+      },
+      {
+        "id": "NFR-02",
+        "category": "Responsiveness",
+        "requirement": "Mobile responsiveness is out of scope for this sprint. No breakpoints below 1,100px are required."
+      },
+      {
+        "id": "NFR-03",
+        "category": "CSS Methodology",
+        "requirement": "All styles must follow BEM (Block Element Modifier) naming convention. Each block has its own CSS file inside /blocks/<block-name>/."
+      },
+      {
+        "id": "NFR-04",
+        "category": "Accessibility",
+        "requirement": "All images must have descriptive alt attributes. iframes must have title attributes. Semantic HTML5 elements (header, main, section, footer, nav) must be used."
+      },
+      {
+        "id": "NFR-05",
+        "category": "Performance",
+        "requirement": "No JavaScript is required. All interactivity (rotation animation) is achieved via CSS only."
+      },
+      {
+        "id": "NFR-06",
+        "category": "Browser Compatibility",
+        "requirement": "Page must render correctly in modern browsers (Chrome, Firefox, Safari, Edge — latest two versions)."
+      },
+      {
+        "id": "NFR-07",
+        "category": "Typography",
+        "requirement": "Font family: 'Helvetica Neue', Arial, sans-serif. Applied globally via .page selector."
+      },
+      {
+        "id": "NFR-08",
+        "category": "Color",
+        "requirement": "Primary accent color: #2F80ED. Used for header CTA link, header decorative square, and interactive elements."
+      }
+    ],
+
+    "design_tokens": {
+      "colors": {
+        "accent": "#2F80ED",
+        "header_background": "#F2F2F2",
+        "page_background": "#FFFFFF",
+        "dark_section_background": "#1A1B22",
+        "dark_section_text": "#FFFFFF"
+      },
+      "typography": {
+        "font_family": "'Helvetica Neue', Arial, sans-serif",
+        "base_language": "pt-BR"
+      },
+      "layout": {
+        "min_width_px": 1100,
+        "max_width_px": 1600,
+        "header_min_height_px": 600,
+        "header_max_height_px": 756
+      }
+    },
+
+    "content_inventory": {
+      "sections": [
+        "header",
+        "description",
+        "techniques",
+        "video",
+        "oakley",
+        "feynman",
+        "digits",
+        "kaufman",
+        "resources",
+        "footer"
+      ],
+      "techniques_count": 5,
+      "kaufman_principles_count": 10,
+      "digits_facts_count": 8,
+      "embedded_videos_count": 2,
+      "resource_logos_count": 4
+    },
+
+    "assets": [
+      { "file": "images/header-image.png", "usage": "Hero illustration in header" },
+      { "file": "images/feynman.png", "usage": "Background image for Feynman section" },
+      { "file": "images/kaufman-triangle.svg", "usage": "Rotating decorative triangle in Kaufman section" },
+      { "file": "images/cards-attention.png", "usage": "Technique card — As Duas Maneiras de Pensar" },
+      { "file": "images/cards-recall.png", "usage": "Technique card — Recall" },
+      { "file": "images/cards-interleaving.png", "usage": "Technique card — Intercalar" },
+      { "file": "images/cards-question.png", "usage": "Technique card — Questões" },
+      { "file": "images/cards-competence.png", "usage": "Technique card — Ilusão da Competência" },
+      { "file": "images/logo_place_header.png", "usage": "Yandex Practicum logo in header" },
+      { "file": "images/logo_place_footer.png", "usage": "Yandex Practicum logo in footer" },
+      { "file": "images/facebook_white.svg", "usage": "Facebook icon in footer" },
+      { "file": "images/instagram_white.svg", "usage": "Instagram icon in footer" },
+      { "file": "images/logo/resources-tedED.png", "usage": "TED-Ed logo in resources section" },
+      { "file": "images/logo/resources-Medium.png", "usage": "Medium logo in resources section" },
+      { "file": "images/logo/resources-dezeen.png", "usage": "Dezeen logo in resources section" },
+      { "file": "images/logo/resources-goodreads.png", "usage": "Goodreads logo in resources section" }
+    ],
+
+    "css_architecture": {
+      "methodology": "BEM",
+      "global_files": [
+        "styles/normalize.css",
+        "styles/style.css"
+      ],
+      "blocks": [
+        { "block": "header", "description": "Header layout, background, hero, rotating square" },
+        { "block": "two-columns", "description": "Reusable two-column layout — description and oakley sections" },
+        { "block": "section-title", "description": "Shared section heading style" },
+        { "block": "section-subtitle", "description": "Shared section subtitle style" },
+        { "block": "cards", "description": "5-card grid for techniques section" },
+        { "block": "video", "description": "Side-by-side YouTube iframe embeds" },
+        { "block": "feynman", "description": "Feynman section with background image" },
+        { "block": "digits", "description": "Facts and numbers grid" },
+        { "block": "table", "description": "Table cell styles including dark theme variant" },
+        { "block": "kaufman", "description": "Dark-themed 10-item principles list and rotating triangle" },
+        { "block": "khan", "description": "Reserved block — content TBD" },
+        { "block": "resources", "description": "Logo strip for external resource links" },
+        { "block": "footer", "description": "Three-column footer layout" },
+        { "block": "rotation", "description": "Shared CSS keyframe rotation animation" },
+        { "block": "logo", "description": "Logo image styles for header and footer placements" },
+        { "block": "root", "description": "Root-level CSS variables or resets" },
+        { "block": "description", "description": "Description section wrapper" },
+        { "block": "oakley", "description": "Oakley section wrapper" },
+        { "block": "techniques", "description": "Techniques section wrapper" }
+      ]
+    },
+
+    "open_items": [
+      {
+        "id": "OI-01",
+        "priority": "High",
+        "item": "Resource section links are all placeholder '#' hrefs — actual URLs must be defined before launch."
+      },
+      {
+        "id": "OI-02",
+        "priority": "High",
+        "item": "Feynman 'Mais →' link has no target URL defined."
+      },
+      {
+        "id": "OI-03",
+        "priority": "Medium",
+        "item": "Footer nav links (Missão, Profissões, social links) are all '#' — target pages or anchors TBD."
+      },
+      {
+        "id": "OI-04",
+        "priority": "Medium",
+        "item": "Khan section block exists in file structure but has no HTML content — reserved for a future sprint."
+      },
+      {
+        "id": "OI-05",
+        "priority": "Low",
+        "item": "style.css contains commented-out .header block styles that duplicate blocks/header/. Cleanup recommended."
+      },
+      {
+        "id": "OI-06",
+        "priority": "Low",
+        "item": "texts.md footer shows '(c) 2022 Seu nome' but HTML uses '© 2023. Fernanda Ribeiro'. HTML is source of truth."
+      }
+    ],
+
+    "out_of_scope": [
+      "Mobile and tablet responsive layout (below 1,100px) — deferred to a future sprint.",
+      "JavaScript interactivity beyond CSS animations.",
+      "Backend, CMS, or database of any kind.",
+      "Multi-language support (EN toggle is not planned for this sprint).",
+      "SEO meta tags, Open Graph tags, favicon.",
+      "Khan section content.",
+      "User analytics or tracking.",
+      "Accessibility audit beyond semantic HTML basics."
+    ],
+
+    "success_metrics": [
+      "All 10 functional requirement sections render correctly at 1,280px viewport width.",
+      "BEM class naming is consistent across all HTML and CSS files.",
+      "No broken image references — all 16 assets load successfully.",
+      "Both YouTube iframes are playable without errors.",
+      "CSS rotation animation runs on both the header square and the Kaufman triangle.",
+      "Page passes W3C HTML validation with no errors.",
+      "CTA link '#techniques' anchor navigation works correctly."
+    ]
+  }
+}

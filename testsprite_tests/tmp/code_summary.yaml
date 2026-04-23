@@ -1,0 +1,78 @@
+version: "2"
+type: frontend
+tech_stack:
+  - HTML
+  - CSS
+  - Static site
+  - BEM-style modular CSS
+routes:
+  - path: /
+    file: index.html
+    auth_required: false
+    description: Main landing page presenting learning techniques and resources
+features:
+  - name: Header and Navigation
+    description: Displays branding, main title, subtitle and navigation link to techniques section
+    files:
+      - index.html
+      - blocks/header/header.css
+      - blocks/logo/logo.css
+    entry_route: /
+    user_interactions:
+      - Load the homepage
+      - View the main title and subtitle
+      - Click the header navigation link to jump to the techniques section
+    api_calls: []
+    auth_required: false
+  - name: Techniques Cards
+    description: Shows Barbara Oakley learning strategies using a card grid layout
+    files:
+      - index.html
+      - blocks/cards/cards.css
+      - blocks/section-title/section-title.css
+    entry_route: /#techniques
+    user_interactions:
+      - Scroll to the techniques section
+      - View each technique card
+      - Read the title and description of each technique
+    api_calls: []
+    auth_required: false
+  - name: Video Section
+    description: Presents embedded TED talks videos with title and subtitle
+    files:
+      - index.html
+      - blocks/video/video.css
+    entry_route: /#video
+    user_interactions:
+      - Scroll to the video section
+      - View the embedded video iframes
+    api_calls: []
+    auth_required: false
+  - name: Feynman Technique Section
+    description: Highlights the Feynman learning technique with an external link
+    files:
+      - index.html
+      - blocks/feynman/feynman.css
+    entry_route: /#feynman
+    user_interactions:
+      - Scroll to the Feynman section
+      - Read the title and subtitle
+      - Click the external link for more information
+    api_calls: []
+    auth_required: false
+  - name: Resources Section
+    description: Displays external resource logos and links for further learning
+    files:
+      - index.html
+      - blocks/resources/resources.css
+    entry_route: /#resources
+    user_interactions:
+      - Scroll to the resources section
+      - View the logos for external resources
+      - Click resource links
+    api_calls: []
+    auth_required: false
+known_limitations:
+  - issue: Static HTML/CSS only
+    location: index.html
+    impact: No dynamic behavior or backend interaction is supported

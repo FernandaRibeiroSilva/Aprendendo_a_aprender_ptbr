@@ -1,0 +1,17 @@
+{
+  "status": "commited",
+  "type": "frontend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:5500",
+  "executionArgs": {
+    "projectName": "Aprendendo_a_aprender_ptbr",
+    "projectPath": "/Users/fernandaribeiro/Downloads/Aprendedno a aprender /Aprendendo_a_aprender_ptbr",
+    "testIds": [],
+    "additionalInstruction": "Test the frontend website for proper layout, rendering, and structure. Focus on verifying the homepage sections render correctly, including header, techniques section, video section, Feynman section, resources, and footer.",
+    "serverMode": "production",
+    "envs": {
+      "API_KEY": "sk-user-NsVem70rj6UmwJ0bRFj64wmrhW9hr76pkBaWRiJrPLOd5a3sh7HeLzOYYDXIuPFJhgDlDk-XAuh7MM5gPzqwEcOITKOsAb5hTJMWqT8m4aBv3I-kWSvsLd7gx7Waourigik"
+    }
+  },
+  "serverPort": 64489
+}
